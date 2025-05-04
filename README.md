@@ -1,5 +1,7 @@
 # Explorar Colombia
 
+![Home Page]()
+
 ## Descripción
 Explorar Colombia es una aplicación web moderna desarrollada con React que permite a los usuarios explorar y conocer las diferentes regiones de Colombia. La aplicación ofrece una experiencia interactiva con un mapa interactivo y un chatbot para descubrir la riqueza cultural y natural del país.
 
