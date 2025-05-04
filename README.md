@@ -1,6 +1,6 @@
 # Explorar Colombia
 
-![Home Page]()
+![Home Page](https://github.com/zayin-dev/react-project/blob/main/imgs/home.png)
 
 ## Descripción
 Explorar Colombia es una aplicación web moderna desarrollada con React que permite a los usuarios explorar y conocer las diferentes regiones de Colombia. La aplicación ofrece una experiencia interactiva con un mapa interactivo y un chatbot para descubrir la riqueza cultural y natural del país.
@@ -108,31 +108,31 @@ explorar_colombia/
 
    Esta es la pagina a la cual el usuario entrara apenas ingrese al sitio web. La pagina consta de cuatro partes principales. Consta de un menu principal, el cual contiene el logo del proyecto, un boton para ir a la pagina principal y un boton para iniciar sesion en el sitio web. 
 
-   ![Menu principal](./src/assets/menu.png)
+   ![Menu principal](https://github.com/zayin-dev/react-project/blob/main/imgs/menu.png)
 
    Tanto el logo como el boton 'inicio' llevan a la pagina principal, mientras que el boton 'login' enviara al usuario a la pagina de inicio de sesion. Una vez el usuario ya inicio sesion sera redirigido a una pagina en la cual se encontrara con un mapa interactivo. Si el usuario vuelve a la pagina principal ya con su sesion iniciada, tendra un boton mas en el menu, el cual corresponde al mapa interactivo.
    
    Despues, esta un componente de carrousel
    
-   ![Menu principal](./src/assets/carrousel.png)
+   ![Menu principal](https://github.com/zayin-dev/react-project/blob/main/imgs/carrousel.png)
 
    Este no tiene muchas caracteristicas. Es un carrusel hecho con bootstrap el cual contiene varias fotos de lugares turisticos de Colombia
 
    Hay un formulario
 
-   ![Formulario](./src/assets/form.png)
+   ![Formulario](https://github.com/zayin-dev/react-project/blob/main/imgs/form.png)
 
    Este sirve para que el usuario pueda registrarse al sitio. Este consta de un campo en el que el usuaro puede poner el 'nickname' con el que sera reconocido en el sitio y un boton el cual desplegara dos campos mas, en los cuales el usuario podra ingresar su correo y una contraseña. De momento no tiene ninguna funcionalidad ya que la pagina no esta enlazada a una base de datos.
    
    Se cuenta con un footer
 
-   ![Footer](./src/assets/footer.png)
+   ![Footer](https://github.com/zayin-dev/react-project/blob/main/imgs/footer.png)
 
    En este apartado se encuentra informacion extra del proyecto, como copyright y redes sociales y un boton en el cual se encuentra la informacion de los creadores del proyecto.
 
    Finalmente, esta el chatbot
    
-   ![ChatBot](./src/assets/chatbot.png)
+   ![ChatBot](https://github.com/zayin-dev/react-project/blob/main/imgs/chatbot.png)
 
    Este pretende ser un asistente el cual le brinde informacion a los usuarios que ingresen al sitio. Se activa dando clic en el boton 'Abrir Chat' en la parte inferior derecha de la pantalla. Al abrirlo el usuario en cuentra un area en el cual el chatbot "responde" y debajo de este una serie de botones correspondientes a los departamentos del pais. Al presionar uno de esos botones, el chatbot dara una breve descripcion del departamento seleccionado. Para cerrar el chatbot se debe presionar el boton 'cerrar' el cual se encuentra arriba del chatbot.
 
@@ -140,12 +140,22 @@ explorar_colombia/
    - Requiere autenticación
    - Acceso controlado por el componente PrivateRoute
 
-   Este corresponde al mapa interactivo mencionado anteriormente. Se puede acceder a este luego de haber iniciado sesion en el sitio. Este consta de un mapa de colombia el cual, al pasar el cursor sobre los departamentos, mostraran su nombre. Al dar clic en algunos de estos departamentos, mostraran un recuadro el cual contiene informacion del sitio. Este contiene el nombre del departamento, una breve descripcion, una imagen del departamento, y algunos datos extra como su capital, altitud y el clima. Para cerrar el recuadro simplemente basta con dar clic en el boton 'cerrar' o dar clic fuera del recuadro.
+   ![Interactive Map](https://github.com/zayin-dev/react-project/blob/main/imgs/interactive_map_explanation.png)
+
+   Este corresponde al mapa interactivo mencionado anteriormente. Se puede acceder a este luego de haber iniciado sesion en el sitio. Este consta de un mapa de colombia el cual, al pasar el cursor sobre los departamentos, mostraran su nombre. Al dar clic en algunos de estos departamentos, mostraran un recuadro el cual contiene informacion del sitio. Este contiene el nombre del departamento, una breve descripcion, una imagen del departamento, y algunos datos extra como su capital, altitud y el clima. 
+
+   ![Sites Explanation](https://github.com/zayin-dev/react-project/blob/main/imgs/sites_explanation.png)
+   
+   Para cerrar el recuadro simplemente basta con dar clic en el boton 'cerrar' o dar clic fuera del recuadro.
+
+
 
 3. **Página de Inicio de Sesión** (`/login`)
    - Interfaz de autenticación de usuarios
    - Manejo del estado de inicio de sesión
    - Redirección al panel después de la autenticación exitosa
+
+   ![Auth Failure](https://github.com/zayin-dev/react-project/blob/main/imgs/auth-failure.png)
 
    Este permite al usuario iniciar sesion en el sitio. Es accesible en el menu principal al presionar el boton 'Login'. Al dar clic en 'Login' en el menu principal, se desplegara un formulario el cual contiene los campos de 'usuario' y contraseña. Si los datos proporcionados con el usuario son correctos, el usuario sera redirigido al mapa interactivo, de lo contrario aparecera un mensaje indicando que el usuario o la contraseña son incorrectos.
 
@@ -186,21 +196,22 @@ explorar_colombia/
 
 ## Instalación y Uso
 1. Clonar el repositorio
-2. Instalar dependencias:
+
+2. En la terminal
+
+   ```bash
+   cd explorar_colombia
+   ```
+3. Instalar dependencias:
    ```bash
    npm i
    ```
-3. Instalar paquetes requeridos:
+4. Instalar paquetes requeridos:
    ```bash
    npm i react-router-dom bootstrap react-bootstrap react-modal
 
    ```
-
-3. Iniciar el servidor de desarrollo:
+5. Iniciar el servidor de desarrollo:
    ```bash
    npm run dev
-   ```
-4. Construir para producción:
-   ```bash
-   npm run build
    ```
