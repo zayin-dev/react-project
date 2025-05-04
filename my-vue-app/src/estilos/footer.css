@@ -89,3 +89,8 @@
     font-size: 16px;
     margin-bottom: 10px;
   }
+
+  .redes-sociales-lista a.red-social-link {
+    display: block; /* Hace que cada enlace ocupe una línea completa /
+    margin-top: 5px; / Añade un pequeño espacio entre los enlaces */
+  }

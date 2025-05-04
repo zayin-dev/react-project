@@ -1,22 +1,22 @@
 /* Estilo para las regiones del mapa */
 .region {
   cursor: pointer;
-  fill: #303030;  /* Color de fondo más suave para las regiones */
+  fill: #303030;  
   transition: fill 0.3s ease;
 }
 
-/* Mejorando el hover con colores más llamativos */
+
 .region:hover {
-  fill: #6643ff;  /* Un naranja brillante para hover */
+  fill: #6643ff; 
 }
 
 /* Secciones con márgenes y un poco de sombra */
 section {
   margin: 60px 0;
   padding: 40px;
-  background-color: #f9f9f9;  /* Fondo suave */
+  background-color: #f9f9f9; 
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Añadir sombra sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }
 
 /* Estilo para el contenedor del mapa */
@@ -25,14 +25,14 @@ section {
   margin: 20px;
   padding: 20px;
   background-color: #e2d9d9;
-  border-radius: 10px;  /* Esquinas redondeadas */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra más marcada */
+  border-radius: 10px;  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
 }
 
 /* Título dentro del mapa */
 .mapa-container h2 {
   font-size: 35px;
-  color: #000000;  /* Un color de texto más oscuro para el título */
+  color: #000000;  
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -44,7 +44,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);  /* Fondo más oscuro y sutil */
+  background-color: rgba(0, 0, 0, 0.6); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,10 +61,10 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra para el modal */
 }
 
-/* Botón de cierre con estilo atractivo */
+/* Botón de cierre  */
 button {
   padding: 12px 24px;
-  background-color: #078511;  /* Verde brillante */
+  background-color: #078511; 
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
@@ -74,11 +74,39 @@ button {
 }
 
 button:hover {
-  background-color: #388e3c;  /* Un verde más oscuro para hover */
+  background-color: #388e3c;  
 }
 
-/* Agregar una transición suave al color de fondo */
+
 button:focus {
-  outline: none;  /* Eliminar contorno al hacer foco */
-  background-color: #66bb6a;  /* Verde más suave al hacer focus */
+  outline: none; 
+  background-color: #66bb6a;  
+}
+
+/*------------------------------------------------Ajustes de tamaño responsiveDesign------------------------------------------------ */
+
+.mapa-container {
+  width: auto; 
+  max-width: 900px; 
+  height: 100%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+
+.mapa-container svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .mapa-container {
+    margin: 10px; 
+    padding: 10px; 
+  }
+
+  .mapa-container h2 {
+    font-size: 28px; 
+  }
 }

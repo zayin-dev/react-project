@@ -13,24 +13,34 @@ function Footer() {
     {
       nombre: "Edwin Gutierrez",
       correo: "Edwin.Gutierrez@gmail.com",
-      foto: Edwin
-       },
+      foto: Edwin,
+      instagram: "https://www.instagram.com/edwin_gutierrez/",
+      facebook: "https://www.facebook.com/edwingutierrez/",
+      linkedin: "https://www.linkedin.com/in/edwin-gutierrez/",
+    },
     {
       nombre: "Sara Sofia",
       correo: "Sapa.Sofia@gmail.com",
-      foto: Sara
+      foto: Sara,
+      instagram: "https://www.instagram.com/sarasofia/",
+      facebook: "https://www.facebook.com/sarasofia/",
+      linkedin: "https://www.linkedin.com/in/sara-sofia/",
     },
-
     {
       nombre: "Juan Vides",
       correo: "Juan.Vides@gmail.com",
-      foto: Juan
+      foto: Juan,
+      instagram: "https://www.instagram.com/juanvides/",
+      facebook: "https://www.facebook.com/juanvides/",
+      linkedin: "https://www.linkedin.com/in/juan-vides/",
     },
-
     {
       nombre: "Thomas",
       correo: "Thomas.rodriguez@gmail.com",
-      foto: Thomas
+      foto: Thomas,
+      instagram: "https://www.instagram.com/thomasrodriguez/",
+      facebook: "https://www.facebook.com/thomasrodriguez/",
+      linkedin: "https://www.linkedin.com/in/thomas-rodriguez/",
     }
   ];
 
@@ -57,6 +67,23 @@ function Footer() {
                   <img src={miembro.foto} alt={miembro.nombre} className="miembro-foto" />
                   <h4 id='nombre-miembro'>{miembro.nombre}</h4>
                   <p id='info-miembro'>{miembro.correo}</p>
+                  <div className="redes-sociales-lista">
+                    {miembro.instagram && (
+                      <a href={miembro.instagram} target="_blank" rel="noopener noreferrer" className="red-social-link">
+                        Instagram
+                      </a>
+                    )}
+                    {miembro.facebook && (
+                      <a href={miembro.facebook} target="_blank" rel="noopener noreferrer" className="red-social-link">
+                        Facebook
+                      </a>
+                    )}
+                    {miembro.linkedin && (
+                      <a href={miembro.linkedin} target="_blank" rel="noopener noreferrer" className="red-social-link">
+                        LinkedIn
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

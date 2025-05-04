@@ -1,0 +1,84 @@
+/* Estilo para las regiones del mapa */
+.region {
+  cursor: pointer;
+  fill: #303030;  /* Color de fondo más suave para las regiones */
+  transition: fill 0.3s ease;
+}
+
+/* Mejorando el hover con colores más llamativos */
+.region:hover {
+  fill: #6643ff;  /* Un naranja brillante para hover */
+}
+
+/* Secciones con márgenes y un poco de sombra */
+section {
+  margin: 60px 0;
+  padding: 40px;
+  background-color: #f9f9f9;  /* Fondo suave */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Añadir sombra sutil */
+}
+
+/* Estilo para el contenedor del mapa */
+.mapa-container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #e2d9d9;
+  border-radius: 10px;  /* Esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra más marcada */
+}
+
+/* Título dentro del mapa */
+.mapa-container h2 {
+  font-size: 35px;
+  color: #000000;  /* Un color de texto más oscuro para el título */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Estilo para el contenedor del modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);  /* Fondo más oscuro y sutil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Estilo para el contenido del modal */
+.modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra para el modal */
+}
+
+/* Botón de cierre con estilo atractivo */
+button {
+  padding: 12px 24px;
+  background-color: #078511;  /* Verde brillante */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;  /* Un verde más oscuro para hover */
+}
+
+/* Agregar una transición suave al color de fondo */
+button:focus {
+  outline: none;  /* Eliminar contorno al hacer foco */
+  background-color: #66bb6a;  /* Verde más suave al hacer focus */
+}
